@@ -1,19 +1,21 @@
 # Realtime Rendering Techniques
-Showcases a variety of realtime rendering effects. The main focus of the example is the implementation of Light Propagation Volumes (LPV), as described in the Crytek paper, *Cascaded Light Propagation Volumes for Real Time Indirect Illumination*.
+Showcases a variety of realtime rendering effects. The main focus of the example is the implementation of Light Propagation Volumes (LPV), as described in the Crytek paper, *Light Propagation Volumes in CryEngine 3*.
 
 Other techniques implemented include:
 * Specular and normal mapping.
-* Deferred shading, with a G-Buffer consisting of a albedo/specular map and a normal map.
+* Deferred shading, with a G-Buffer consisting of an albedo/specular map and a normal map.
 * Directional lighting with PCF shadow mapping.
 * Participating media *(god rays)* and GPU 'dust' particles.
 * Screen-space ambient occlusion (SSAO).
 * Screen-space reflections, using ray casting.
 
 ## Building & Running
-The program was built and tested on OSX 10.10, using a 1024 Retina MBP, with Apple LLVM 6 / clang 3.5.
-1. Unpack the `zip` archives in `data/textures` and `data/models`.
-2. Build the sponza scene by running `make scene sponza` in the project root.
-3. Run with `./bin/main`.
+The program was built and tested on OSX 10.10, using a 2014 Retina MBP, with Apple LLVM 6 / clang 3.5.
+
+1. Download [glm](http://glm.g-truc.net/) and [glfw3](http://www.glfw.org).
+2. Unpack the `zip` archives in `data/textures` and `data/models`.
+3. Build the sponza scene by running `make scene sponza` in the project root.
+4. Run with `./bin/main`.
 
 The camera can be moved with the `WASD` keys, and rotated with the arrow keys. The directional light can be adjusted using the `IJKL` keys.
 
